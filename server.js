@@ -18,7 +18,7 @@ db.serialize(() => {
 });
 
 //Hardcoded OpenAI API key (not recommended for production)
-const OPENAI_API_KEY = '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';
+const OPENAI_API_KEY = 
 // Function to get GPT response from OpenAI API
 const getGptResponse = async (message) => {
     try {
