@@ -3,31 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot Interface</title>
+    <title>NOVA-X</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="chat-container">
+    <!-- Chatbot Icon -->
+    <div id="chatIcon" class="chat-icon">
+        <i class="fas fa-comments"></i>
+    </div>
+
+    <!-- Chatbot Popup -->
+    <div id="chatPopup" class="chat-popup">
         <div class="chat-header">
             <h2>NOVA-X</h2>
+            <span id="closeChat" class="close">&times;</span>
         </div>
-        <div class="chat-messages">
-            <div class="message bot-message">Hello! How can I assist you today?</div>
+        <div class="chat-body" id="chatBody">
+            <!-- Chat content will go here -->
         </div>
-        
-        <!-- Suggested Questions Section -->
-        <div class="suggested-questions">
-            <button class="suggestion">What are your hours?</button>
-            <button class="suggestion">Where is my order?</button>
-            <button class="suggestion">How do I return a product?</button>
-        </div>
-        
         <div class="chat-input">
-            <input type="text" placeholder="Type your message..." id="userInput" />
-            <button id="sendButton">Send</button>
+            <input type="text" id="userInput" placeholder="Type a message...">
+            <button id="sendButton"><i class="fas fa-paper-plane"></i></button>
         </div>
     </div>
 
+    <!-- Include the script.js -->
     <script src="script.js"></script>
 </body>
 </html>
